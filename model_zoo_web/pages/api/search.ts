@@ -1,7 +1,14 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
+
 const uri = process.env.MONGOURL
-console.log(uri)
+const dbName = 'ModelZoo';
+
+type Model = {
+    username: string;
+    modelname: string
+    model: string;
+  };
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -12,27 +19,15 @@ const client = new MongoClient(uri, {
     }
 });
 
-function generateRandomString(length: number): string {
-    const characters: string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    let result: string = '';
-
-    for (let i: number = 0; i < length; i++) {
-        const randomIndex: number = Math.floor(Math.random() * characters.length);
-        result += characters.charAt(randomIndex);
-    }
-
-    return result;
-}
-
 async function create() {
     try {
         await client.connect();
-        await client.db("admin").command({ ping: 1 });
-        console.log("Pinged your deployment. You successfully connected to MongoDB!");
-        return {
-            message: "OK"
-        }
-
+        const db = client.db(dbName);
+        const modelCollection = db.collection('model');
+        const cursor = modelCollection.find();
+        const data: Model[] = await cursor.toArray();
+        return data;
+        
     } catch (error){
         console.log(error)
     } finally {
