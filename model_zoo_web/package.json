@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "13.5.4",
     "next-auth": "^4.23.2",
+    "@typescript-eslint/parser": "^6.7.4",
+    "dotenv": "^16.3.1",
+    "mongodb": "^6.1.0",
+    "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "^20.8.2",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10",
