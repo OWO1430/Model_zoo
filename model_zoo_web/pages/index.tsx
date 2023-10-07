@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
     return (
         <div className="bg-white">
+            <Navbar />
             <div className="flex ">
                 <SearchBox
                     title="Data Modality"
