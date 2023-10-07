@@ -1,7 +1,7 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
-const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
-const uri = process.env.MONGOURL
-console.log(uri)
+import type { NextApiRequest, NextApiResponse } from "next";
+const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
+const uri = process.env.MONGOURL;
+console.log(uri);
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -9,12 +9,12 @@ const client = new MongoClient(uri, {
         version: ServerApiVersion.v1,
         strict: true,
         deprecationErrors: true,
-    }
+    },
 });
 
 function generateRandomString(length: number): string {
-    const characters: string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    let result: string = '';
+    const characters: string = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    let result: string = "";
 
     for (let i: number = 0; i < length; i++) {
         const randomIndex: number = Math.floor(Math.random() * characters.length);
@@ -30,11 +30,10 @@ async function create() {
         await client.db("admin").command({ ping: 1 });
         console.log("Pinged your deployment. You successfully connected to MongoDB!");
         return {
-            message: "OK"
-        }
-
-    } catch (error){
-        console.log(error)
+            message: "OK",
+        };
+    } catch (error) {
+        console.log(error);
     } finally {
         // Ensures that the client will close when you finish/error
         await client.close();
@@ -43,9 +42,9 @@ async function create() {
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     try {
-      const result = await create()
-      res.status(200).send( result )
+        const result = await create();
+        res.status(200).send(result);
     } catch (err) {
-      res.status(500).send({ error: 'failed to fetch data' })
+        res.status(500).send({ error: "failed to fetch data" });
     }
-  }
+}

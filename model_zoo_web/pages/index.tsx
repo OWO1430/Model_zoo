@@ -3,16 +3,11 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import SearchBox from "@/components/searchBox";
 
-
 const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
-
+function SearchBoxes() {
     return (
-        <div className="flex bg-white h-full">
-            <Navbar />
-
-            <div className="flex ml-24">
+        <div className="bg-white flex">
+            <div className="flex ">
                 <SearchBox
                     title="Data Modality"
                     searchItems={["Text", "Image", "Audio", "Video"]}
@@ -29,6 +24,14 @@ export default function Home() {
                 <SearchBox title="Source" searchItems={["Text", "Image", "Audio", "Video"]} />
             </div>
         </div>
+    );
+}
 
+export default function Home() {
+    return (
+        <div className="flex ml-24 bg-white">
+            <Navbar />
+            <SearchBoxes />
+        </div>
     );
 }
