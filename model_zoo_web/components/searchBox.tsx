@@ -19,6 +19,7 @@ export default function SearchBox(props: { title: string; searchItems: string[] 
                                 return (
                                     <li
                                         id={index.toString()}
+                                        key={index}
                                         className="flex text-black border-2 border-black  w-fit my-2 mx-2"
                                     >
                                         <input type="checkbox" className="accent-black mx-1" />
