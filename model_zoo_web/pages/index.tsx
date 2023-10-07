@@ -7,7 +7,7 @@ import SearchBar from "@/components/searchBar";
 const inter = Inter({ subsets: ["latin"] });
 function SearchBoxes() {
     return (
-        <div className="bg-white">
+        <div className="bg-white flex flex-col">
             <SearchBar />
             <div className="flex ">
                 <SearchBox
