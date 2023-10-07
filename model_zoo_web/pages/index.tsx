@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import SearchBox from "@/components/searchBox";
 import SearchBar from "@/components/searchBar";
+import ModelBlock from "@/components/modelBlock";
 
 const inter = Inter({ subsets: ["latin"] });
 function SearchBoxes() {
@@ -25,6 +26,7 @@ function SearchBoxes() {
                 <SearchBox title="Special" searchItems={["Text", "Image", "Audio", "Video"]} />
                 <SearchBox title="Source" searchItems={["Text", "Image", "Audio", "Video"]} />
             </div>
+            <ModelBlock />
         </div>
     );
 }
