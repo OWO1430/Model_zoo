@@ -2,7 +2,25 @@ import Image from "next/image"
 import Link from "next/link"
 
 
-export default function ImageBNT (props: { link: string, imageSrc: string, style: string }) {
+export default function ImageBNT (props: { link: string, imageSrc: string, style: string, type:boolean, name:string }) {
+  if(props.type){
+    return (
+      <div className = 'flex'>
+        <Link href = {props.link} className = {props.style}>
+          <Image
+              src= {props.imageSrc}
+              width={50}
+              height={50}
+              alt="searchIcon"
+              className="filter invert bg-white p-1"
+          />
+        </Link>
+        <div className = 'item-center'>
+          <h2> {props.name} </h2>
+        </div>
+      </div>
+    );
+  } else {
     return (
       <Link href = {props.link} className = {props.style}>
           <Image
@@ -14,4 +32,5 @@ export default function ImageBNT (props: { link: string, imageSrc: string, style
           />
       </Link>
     );
-  };
+  }
+};
