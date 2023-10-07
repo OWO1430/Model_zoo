@@ -32,7 +32,6 @@ function SearchBoxes() {
 export default function Home() {
     return (
         <div className="flex ml-24 bg-white">
-            <Navbar />
             <SearchBoxes />
         </div>
     );
