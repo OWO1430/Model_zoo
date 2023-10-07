@@ -49,7 +49,7 @@ export default function SearchBar() {
                         });
                     }}
                 >
-                    Earth's Surface
+                    Earth/&apos;s Surface
                 </button>
                 <button
                     className="bg-white text-black border-2 border-black my-1.5 mx-2 w-60"

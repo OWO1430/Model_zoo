@@ -4,7 +4,7 @@ export default function ModelBlock() {
       <div className="border-2 border-black w-full h-24 flex items-center">
         <div className="w-full h-24 flex flex-col items-start justify-center">
           <h1 className="text-black text-xl ml-4 font-medium">Hello</h1>
-          <h6 className="text-black text-lg ml-4">I'm Panda</h6> {/* 调整字体大小 */}
+          <h6 className="text-black text-lg ml-4">I/&apos;m Panda</h6> {/* 调整字体大小 */}
         </div>
       </div>
     </div>

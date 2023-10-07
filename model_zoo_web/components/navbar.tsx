@@ -19,7 +19,7 @@ export default function Navbar() {
                 }}
             >
                 <ImageBNT
-                    link="https://ntumail.cc.ntu.edu.tw/"
+                    link="/"
                     imageSrc="/panda.png"
                     style="text-xl font-extrabold "
                     type={hover}
@@ -41,7 +41,7 @@ export default function Navbar() {
                 }}
             >
                 <ImageBNT
-                    link="https://ntumail.cc.ntu.edu.tw/"
+                    link="/"
                     imageSrc="/panda.png"
                     style=""
                     type={hover}
