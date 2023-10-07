@@ -2,11 +2,13 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import SearchBox from "@/components/searchBox";
+import SearchBar from "@/components/searchBar";
 
 const inter = Inter({ subsets: ["latin"] });
 function SearchBoxes() {
     return (
-        <div className="bg-white flex">
+        <div className="bg-white">
+            <SearchBar />
             <div className="flex ">
                 <SearchBox
                     title="Data Modality"
