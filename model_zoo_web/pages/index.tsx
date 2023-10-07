@@ -4,11 +4,9 @@ import Navbar from "@/components/navbar";
 import SearchBox from "@/components/searchBox";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+function SearchBoxes() {
     return (
-        <div className="bg-white">
-            <Navbar />
+        <div className="bg-white flex">
             <div className="flex ">
                 <SearchBox
                     title="Data Modality"
@@ -25,6 +23,15 @@ export default function Home() {
                 <SearchBox title="Special" searchItems={["Text", "Image", "Audio", "Video"]} />
                 <SearchBox title="Source" searchItems={["Text", "Image", "Audio", "Video"]} />
             </div>
+        </div>
+    );
+}
+
+export default function Home() {
+    return (
+        <div className="flex justify-end bg-white">
+            <Navbar />
+            <SearchBoxes />
         </div>
     );
 }
