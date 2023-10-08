@@ -21,17 +21,20 @@ export default function ImageBNT(props: {
                 }}
             >
                 <Link href={props.link} className={props.style}>
-                    <Image
-                        src={props.imageSrc}
-                        width={50}
-                        height={50}
-                        alt="searchIcon"
-                        className="filter invert bg-white p-1"
-                    />
-                </Link>
-                <div className=" text-xl font-bold	pl-3 pt-3">
-                    <h2> {props.name} </h2>
+                <div className = "flex">
+                        <Image
+                            src={props.imageSrc}
+                            width={50}
+                            height={50}
+                            alt="searchIcon"
+                            className="filter invert bg-white p-1"
+                        />
+
+                    <div className=" text-xl font-bold	pl-3 pt-3">
+                        <h2> {props.name} </h2>
+                    </div>
                 </div>
+                </Link>
             </div>
         );
     } else {
