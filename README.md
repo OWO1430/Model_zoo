@@ -1,6 +1,8 @@
 # Project BioPY
 ---
-
+Project Demo Link
+[Deployed on Vercel](https://model-zoo-tau.vercel.app/)
+---
 ## High-Level Summary
 We have crafted a comprehensive, dynamic database that seamlessly integrates publicly available large-scale biomedical datasets, space biology datasets, and pertinent pre-trained models.
 
