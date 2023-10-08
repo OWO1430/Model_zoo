@@ -25,6 +25,13 @@ export default function SwitchBNT(props: { type: boolean }) {
                 type={props.type}
                 name="Community"
             />
+            <ImageBNT
+                link="/network"
+                imageSrc="/marketing.png"
+                style="mb-4"
+                type={props.type}
+                name="Community"
+            />
         </div>
     );
 }

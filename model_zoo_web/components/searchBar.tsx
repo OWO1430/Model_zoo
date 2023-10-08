@@ -6,7 +6,8 @@ export default function SearchBar() {
     const [searchInput, setSearchInput] = useState("");
     const router = useRouter();
     return (
-        <div className="flex justify-start text-center  border rounded-full border-hidden mx-2 mb-1 p-2  bg-slate-400/0">
+        <div className="flex justify-start text-center  border rounded-full border-hidden mx-2 mb-1 p-2  bg-slate-400/0 justify-center">
+            <div className="flex">
             <Image
                 src="/return_icon_154912.png"
                 width={40}
@@ -36,7 +37,7 @@ export default function SearchBar() {
                     setSearchInput(event.target.value);
                 }}
             />
-
+            </div>
             <div className="border-2 border-black w-200">
                 <button
                     className="bg-black border-2 border-black my-1.5 mx-2 w-40"

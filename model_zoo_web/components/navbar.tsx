@@ -20,10 +20,10 @@ export default function Navbar() {
             >
                 <ImageBNT
                     link="/"
-                    imageSrc="/panda.png"
-                    style="text-xl font-extrabold "
+                    imageSrc="/logo.png"
+                    style="text-xl font-extrabold"
                     type={hover}
-                    name="BIOTROVE"
+                    name="BIOPY"
                 />
                 <SwitchBTN type={hover} />
                 <LoginBTN />
@@ -42,7 +42,7 @@ export default function Navbar() {
             >
                 <ImageBNT
                     link="/"
-                    imageSrc="/panda.png"
+                    imageSrc="/logo.png"
                     style=""
                     type={hover}
                     name="Panda"

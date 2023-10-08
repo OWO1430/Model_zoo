@@ -5,7 +5,7 @@ export const main = [
         dataType:"NASA image Data" ,
         description: "Micro-OCT data from Open Science for Life in Space, images of murine retina.",
         name: "murine_retina_OSD-557",
-        link: "/https://osdr.nasa.gov/bio/repo/data/studies/OSD-557",
+        link: "https://osdr.nasa.gov/bio/repo/data/studies/OSD-557",
     },
     {
         dataType:"NASA image Data" ,

@@ -30,7 +30,7 @@ function SearchBoxes() {
     return (
         <div className="bg-white flex flex-col">
             <SearchBar />
-            <div className="flex ">
+            <div className="flex justify-center">
                 <SearchBox
                     title="Data Modality"
                     searchItems={["Text", "Image", "Audio", "Video"]}
