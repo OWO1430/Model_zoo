@@ -42,8 +42,52 @@ In order to run the frontend locally, you need to follow these steps.
 1. The 3D graph on the "network" page - [Source](https://rawgit.com/jexp/neo4j-3d-force-graph/master/particles.html")  
    > We used it to demonstrate our future vision, creating an intuitive graph on how the models and datas in the database relate to each others!
 
---- 
+---
 
+## How do users use model zoo?
+
+1. Exploration and Search: Dr. Smith is conducting a space biology project to study the impact of microgravity on plant genes. She needs a model to help classify gene patterns. She visited the Space Biology Model Zoo and searched for models related to plant genetics.
+
+2. View Model Details: She found a model called "Plant Genome Sequence Classifier - Microgravity Effects." The model card explains that it was trained on thousands of plant genome sequences and has been optimized to identify patterns related to microgravity effects.
+
+3. Download/Import Model: Dr. Smith downloaded the model's weights and configuration files. The Model Zoo provided direct download links and also offered code snippets in popular programming languages for the import process.
+
+4. Fine-Tuning: Despite the promising nature of this model, Dr. Smith has her own specific data collected from experiments. She decided to fine-tune this model on her own data to ensure it adapts to her experimental conditions.
+
+5. Deployment and Usage: After fine-tuning, she deployed the model in her genome analysis pipeline. This model successfully helped her classify gene patterns, accelerating her research.
+
+6. Feedback and Contribution: Several months later, Dr. Smith further improved the model. She contributed her version along with notes on its enhanced performance on specific plant species back to the Model Zoo.
+
+These steps creates a positive feedback loop for the science community especially space biology related researchers.
+
+
+## What might be the models that we should add into model zoo? 
+
+### Models
+Models trained on the TCGA (The Cancer Genome Atlas) could be a good starting point for genomic tasks.
+For imaging tasks, models trained on large-scale medical imaging datasets, such as those from the RSNA (Radiological Society of North America), could be adapted.
+
+1. DeepBind:
+Description: This deep learning model predicts DNA and RNA binding specificities for different proteins.
+Potential Application: Understanding protein-DNA/RNA interactions in space biology, especially under microgravity conditions, to study gene regulation.
+
+3. AlphaFold:
+Description: Developed by DeepMind, AlphaFold predicts the 3D structures of proteins based on their amino acid sequences.
+Potential Application: Predicting the structural changes of proteins that may be induced under space conditions, which can offer insights into functional alterations.
+
+3. EpiDeep:
+Description: This model predicts epigenomic features, such as histone modifications, from DNA sequences.
+Potential Application: Understanding the epigenetic landscape of organisms in space and how it might differ from terrestrial conditions.
+
+4. Resnet for Microscopy:
+Description: Residual networks (Resnets) that are fine-tuned for high-content microscopy images.
+Potential Application: Analyzing morphological changes in cells or tissues during spaceflight, including aspects like cell shape, organelle health, and cell-cell interactions.
+
+5. seq2seq for DNA Sequences:
+Description: Sequence-to-sequence models that can predict, for instance, potential coding sequences within DNA.
+Potential Application: Discovering new genes or regulatory elements that become active in space environments
+
+---
 
 ## What are the corresponding datasets?
 ### Microbiology
@@ -119,7 +163,6 @@ DeepProfile: Uses autoencoders to learn embeddings of gene expression profiles, 
 DeepAffinity: Predicts protein-ligand affinity using convolutional neural networks.
 Alphafold: Though it's a model for protein structure prediction, it signifies how deep learning models can be used effectively for protein-related tasks. Fine-tuning a model like Alphafold on protein expression data can provide meaningful embeddings or predictions.
 
-So, take using 
 
 ### Other image datas and corresponding pre-trained models
 1. Microscopy of Cellular Structures: Observing cells in space can reveal how microgravity affects cellular structure and function. For instance, observing changes in the cytoskeleton of cells can provide insights into how cells sense and adapt to microgravity.
