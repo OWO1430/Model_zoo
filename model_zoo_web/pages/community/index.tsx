@@ -3,15 +3,15 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import SearchBox from "@/components/searchBox";
 import SearchBar from "@/components/searchBar";
-import ModelBlock from "@/components/modelBlock";
-import { main } from "@/dummyData/database"
+import ComminityBlock from "@/components/communityBlock";
+import { main } from "@/dummyData/community"
 
 function ModelBlocks() {
     return (
         <div>
         {
             main.map((item, index) => (
-                <ModelBlock
+                <ComminityBlock
                     key={index} // Don't forget to provide a unique key when mapping through an array
                     link={item.link}
                     dataType={item.dataType}
@@ -29,24 +29,7 @@ export default function Home() {
     return (
         <div className="flex flex-col ml-24 bg-white">
             <SearchBar />
-            <div className="flex justify-center">
-                <SearchBox
-                    title="Data Modality"
-                    searchItems={["Text", "Image", "Audio", "Video"]}
-                />
-                <SearchBox
-                    title="Data Type"
-                    searchItems={["Experimental Performance", "RNA Sequencing", "Image"]}
-                />
-                <SearchBox
-                    title="Biological Type"
-                    searchItems={["Text", "Image", "Audio", "Video"]}
-                />
-                <SearchBox title="Special" searchItems={["Text", "Image", "Audio", "Video"]} />
-                <SearchBox title="Source" searchItems={["Text", "Image", "Audio", "Video"]} />
-            </div>
             <ModelBlocks />
         </div>
     );
 }
-

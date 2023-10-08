@@ -19,7 +19,7 @@ export default function SwitchBNT(props: { type: boolean }) {
                 name="Models"
             />
             <ImageBNT
-                link="https://ntumail.cc.ntu.edu.tw/"
+                link="/community"
                 imageSrc="/multiple.png"
                 style="mb-4"
                 type={props.type}

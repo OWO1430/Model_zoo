@@ -24,7 +24,7 @@ export default function ModelBlock(props: { link: string, dataType: string, desc
                 className="filter bg-white p-1 mr-4"
               />
             </Link>
-            {/* <Link href={props.link} className={props.style}> */}
+            <Link href='/network' className={props.style}>
               <Image
                 src='/marketing.png'
                 width={50}
@@ -32,7 +32,7 @@ export default function ModelBlock(props: { link: string, dataType: string, desc
                 alt="searchIcon"
                 className="filter bg-white p-1 mr-4"
               />
-            {/* </Link> */}
+            </Link>
           </div>
         </div>
       </div>
