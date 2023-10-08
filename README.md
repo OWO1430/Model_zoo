@@ -1,6 +1,6 @@
 # Project BioPY
 ---
-Project Demo Link
+Project Live Demo Link  
 [Deployed on Vercel](https://model-zoo-tau.vercel.app/)
 ---
 ## High-Level Summary
