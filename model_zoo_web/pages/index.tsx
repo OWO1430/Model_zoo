@@ -17,7 +17,7 @@ function ModelBlocks() {
                     dataType={item.dataType}
                     description={item.description}
                     name={item.name}
-                    style="your-style" // Set your desired style here
+                    style="" // Set your desired style here
                 />
             ))
         }
