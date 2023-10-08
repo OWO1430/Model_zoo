@@ -12,7 +12,7 @@ export default function CommunityBlock(props: { link: string, dataType: string, 
         </div>
         <div className="flex items-center" >
           <div className="mr-5 ml-2 flex" >
-            <Link href='/network' className={props.style}>
+            {/* <Link href={props.link} className={props.style}> */}
               <Image
                 src='/join.png'
                 width={50}
@@ -20,7 +20,7 @@ export default function CommunityBlock(props: { link: string, dataType: string, 
                 alt="searchIcon"
                 className="filter bg-white p-1 mr-4"
               />
-            </Link>
+            {/* </Link> */}
           </div>
         </div>
       </div>

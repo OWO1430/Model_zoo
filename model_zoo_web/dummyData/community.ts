@@ -2,8 +2,8 @@ export const main = [
 
     {
         "dataType": "Space Python Party",
-        "description": "A deep convolutional neural network with 18 layers, commonly used for image classification tasks",
-        "name": "BioPY Official",
+        "description": " deep convolutional neural network with 18 layers, commonly used for image classification tasks",
+        "name": "Space Python Party",
         "link": "https://huggingface.co/microsoft/resnet-18"
     },
     {

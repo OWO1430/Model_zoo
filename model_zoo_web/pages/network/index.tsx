@@ -19,11 +19,9 @@ const EmbeddedWebsite: React.FC<{ src: string }> = ({ src }) => {
                 title="Embedded Website"
                 sandbox="allow-same-origin allow-scripts"
                 onLoad={(e) => {
-                    // iframe 已加载完成
                     const iframe = e.target as HTMLIFrameElement;
                     const iframeDocument = iframe.contentDocument || iframe.contentWindow?.document;
                     if (iframeDocument) {
-                        // 在此处执行与 iframe 内容相关的 JavaScript 操作
                     }
                 }}
             ></iframe>
@@ -35,10 +33,16 @@ export default function Home() {
     const embeddedWebsiteSrc = "https://rawgit.com/jexp/neo4j-3d-force-graph/master/particles.html"; // 替换为你想要嵌入的网站 URL
 
     return (
-        <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+        <div className="ml-20 min-h-screen bg-gray-100 flex items-center justify-center">
             <div className="w-full max-w-4xl p-4">
-                <h1 className="text-3xl font-semibold mb-4">Embedded Website Example</h1>
+                <h1 className="text-3xl font-semibold mb-4">Concept Demo</h1>
                 <EmbeddedWebsite src={embeddedWebsiteSrc} />
+            </div>
+            <div className="w-full max-w-4xl p-4">
+                <h1 className="text-3xl font-semibold mb-4">Future vision explaination</h1>
+                <h6 className="text-3xl font-semibold mb-4 text-sm">The 3D graph on the left is currently imported from "https://github.com/jexp/neo4j-3d-force-graph" to display our concept.</h6>
+                <h6>Our future vision: creating an intuitive graph on how the models and datas in the database relate to each others. The picture below is our current development progress, it seems like we can't implement the graphing feature to our frontend before the deadline, but we still want to showcase the functionality.</h6>
+                <Image src="/neo4jexp.jpg" alt="conceptual demo" height={500} width={500} />
             </div>
         </div>
     );
