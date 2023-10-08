@@ -41,7 +41,7 @@ In order to run the frontend locally, you need to follow these steps.
   > Since we've likned external resources using https protocol, error might occour, this won't happen on cloud deployments.
 
 ## External links/ resources used 
-1. The 3D graph on the "network" page - [Source](https://rawgit.com/jexp/neo4j-3d-force-graph/master/particles.html")  
+1. The 3D graph on the "network" page - [Source](https://rawgit.com/jexp/neo4j-3d-force-graph/master/particles.html)  
    > We used it to demonstrate our future vision, creating an intuitive graph on how the models and datas in the database relate to each others!
 
 ---
