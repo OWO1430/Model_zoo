@@ -8,7 +8,7 @@ console.log(neo4jUri)
 console.log(neo4jUser)
 console.log(neo4jPassword)
 
-const driver = neo4j.driver('neo4j+s://7993aec7.databases.neo4j.io', neo4j.auth.basic(neo4jUser, neo4jPassword));
+const driver = neo4j.driver('neo4j+s://af28e064.databases.neo4j.io', neo4j.auth.basic(neo4jUser, neo4jPassword));
 
 console.log(neo4jUri)
 console.log(neo4jUser)
