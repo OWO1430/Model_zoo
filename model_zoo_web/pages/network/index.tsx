@@ -40,8 +40,8 @@ export default function Home() {
             </div>
             <div className="w-full max-w-4xl p-4">
                 <h1 className="text-3xl font-semibold mb-4">Future vision explaination</h1>
-                <h6 className="text-3xl font-semibold mb-4 text-sm">The 3D graph on the left is currently imported from "https://github.com/jexp/neo4j-3d-force-graph" to display our concept.</h6>
-                <h6>Our future vision: creating an intuitive graph on how the models and datas in the database relate to each others. The picture below is our current development progress, it seems like we can't implement the graphing feature to our frontend before the deadline, but we still want to showcase the functionality.</h6>
+                <h6 className="text-3xl font-semibold mb-4 text-sm">The 3D graph on the left is currently imported from &quot;https://github.com/jexp/neo4j-3d-force-graph&quot; to display our concept.</h6>
+                <h6>Our future vision: creating an intuitive graph on how the models and datas in the database relate to each others. The picture below is our current development progress, it seems like we can&apos;t implement the graphing feature to our frontend before the deadline, but we still want to showcase the functionality.</h6>
                 <Image src="/neo4jexp.jpg" alt="conceptual demo" height={500} width={500} />
             </div>
         </div>
